@@ -1,38 +1,4 @@
-Ahora desarrolla la clase SimuladorMovimiento para mi Proyecto Integrador de Programación II.
 
-Debes respetar mi archivo especificacion_simulador.md y utilizar la clase Automovil que ya desarrollamos en automovil.py.
-
-La clase debe cumplir con lo siguiente:
-
-Crear una clase llamada SimuladorMovimiento.
-
-Utilizar el constructor init.
-
-Recibir un objeto de la clase Automovil.
-
-Crear una lista llamada historial para guardar los resultados de las simulaciones.
-
-Utilizar self para manejar los atributos.
-
-Crear el método calcular_velocidad_final(tiempo), utilizando la fórmula Vf = Vi + (a * t).
-
-Crear el método calcular_distancia(tiempo), utilizando la fórmula d = (Vi * t) + (0.5 * a * t ** 2).
-
-Crear el método calcular_tiempo_objetivo(velocidad_objetivo), utilizando la fórmula t = (Vf - Vi) / a.
-
-Crear el método calcular_distancia_objetivo(velocidad_objetivo), utilizando la fórmula d = (Vf ** 2 - Vi ** 2) / (2 * a).
-
-Crear el método guardar_resultado(resultado) para almacenar los resultados en la lista.
-
-Crear el método mostrar_historial() para mostrar las simulaciones anteriores.
-
-Validar que el tiempo sea mayor que cero y que la velocidad objetivo sea mayor que la velocidad inicial.
-
-Mostrar los resultados con dos decimales.
-
-Utiliza nombres en español y código sencillo para un estudiante de segundo semestre. No agregues funciones innecesarias. Entrega el código completo y explica cómo se relaciona con la clase Automovil.
-Aquí tienes el código de la clase `SimuladorMovimiento` según las especificaciones que proporcionaste:
-```python
 class SimuladorMovimiento:
     def __init__(self, automovil):
         """Constructor que recibe un objeto de la clase Automovil."""
@@ -75,4 +41,3 @@ class SimuladorMovimiento:
         """Muestra los resultados almacenados en el historial."""
         for i, resultado in enumerate(self.historial, start=1):
             print(f"Resultado {i}: {resultado}")
-```
